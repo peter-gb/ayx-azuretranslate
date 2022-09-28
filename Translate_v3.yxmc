@@ -1,0 +1,3203 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="3834" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Translated</Name>
+          <Abbrev>T</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>T Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1230" y="114" width="1368" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>This macro uses the Microsoft Translate API to translate a single text field into selected languages</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1230" y="186" width="1224" height="276" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Workflow built by: peter.gb@theinformationlab.co.uk
+28/09/2022
+
+API Docs:
+https://learn.microsoft.com/en-gb/azure/cognitive-services/translator/reference/v3-0-translate
+
+Tool Icon Attribution:
+Translation icons created by Freepik - Flaticon
+https://www.flaticon.com/free-icons/translation</Text>
+          <Font name="Segoe UI" size="15.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1218" y="18" width="1392" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Microsoft Azure Text Translator API Macro</Text>
+          <Font name="Segoe UI" size="48" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="114" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input1</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="7" />
+              <Fields>
+                <Field name="Text field to translate" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Lache und die Welt lacht mit dir. Furze und die Welt hört auf zu lachen.</c>
+                </r>
+                <r>
+                  <c>Ca n’a rien à voir avec la choucroute</c>
+                </r>
+                <r>
+                  <c>停止用筷子敲打我的脸.</c>
+                </r>
+                <r>
+                  <c>这些袜子将作为耳罩</c>
+                </r>
+                <r>
+                  <c>βρέχει καρεκλοπόδαρα</c>
+                </r>
+                <r>
+                  <c>Είπε ο γάιδαρος τον πετεινό κεφάλα.</c>
+                </r>
+                <r>
+                  <c>Tirar la casa por la ventana.</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Text for Translation</AnnotationText>
+          <DefaultAnnotationText>Text for Translation
+Input</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Text field to translate" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="82">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1940" y="500" width="936" height="463" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption><![CDATA[ ]]></Caption>
+          <Style TextColor="#314c4a" FillColor="#95caff" BorderColor="#000000" Transparency="1" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="80">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1950" y="534" width="24" height="23" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[ ]]></Text>
+              <Font name="Segoe UI" size="20.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="149" g="202" b="255" />
+              <Shape shape="3" />
+              <Justification Justification="7" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="81">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="2106" y="906" width="660" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Reshape the API responses into a regular table</Text>
+              <Font name="Segoe UI" size="20.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="149" g="202" b="255" />
+              <Shape shape="3" />
+              <Justification Justification="7" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1962" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>Contains</Operator>
+                <Field>JSON_Name</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2022-09-27 18:32:41</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>detected</Operand>
+                  <StartDate>2022-09-27 18:32:41</StartDate>
+                  <EndDate>2022-09-27 18:32:41</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Contains([JSON_Name],"detected")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="2058" y="605" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>JSON_Name</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>JSON_Name</RootName>
+              <Delimeters value="." />
+              <NumFields value="3" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2154" y="606" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="JSON_Name" selected="False" />
+                <SelectField field="JSON_Name1" selected="False" />
+                <SelectField field="JSON_Name2" selected="False" />
+                <SelectField field="JSON_Name3" selected="True" rename="Header" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="Header" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="2262" y="606" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="OriginalText_ID" />
+                <Field field="Original_Text" />
+              </GroupFields>
+              <HeaderField field="Header" />
+              <DataField field="JSON_ValueString" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="2058" y="774" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>Contains</Operator>
+                <Field>JSON_Name</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2022-09-27 18:35:45</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>translations</Operand>
+                  <StartDate>2022-09-27 18:35:45</StartDate>
+                  <EndDate>2022-09-27 18:35:45</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Contains([JSON_Name],"translations")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2370" y="606" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="language" selected="True" rename="Original_Language_Detected" />
+                <SelectField field="score" selected="True" rename="Detected_Language_Score" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="2766" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="OriginalText_ID" order="Ascending" />
+                <Field field="TranslationID" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>OriginalText_ID - Ascending
+TranslationID - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="TranslationID" source="Formula: [TranslationID] + 1" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="2154" y="762" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>JSON_Name</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>JSON_Name</RootName>
+              <Delimeters value="." />
+              <NumFields value="4" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name4" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2238" y="762" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="JSON_Name" selected="False" />
+                <SelectField field="JSON_Name1" selected="False" />
+                <SelectField field="JSON_Name2" selected="False" />
+                <SelectField field="JSON_Name3" selected="True" rename="TranslationID" />
+                <SelectField field="JSON_Name4" selected="True" rename="Header" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="TranslationID" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="Header" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="2346" y="762" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="OriginalText_ID" />
+                <Field field="Original_Text" />
+                <Field field="TranslationID" />
+              </GroupFields>
+              <HeaderField field="Header" />
+              <DataField field="JSON_ValueString" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="TranslationID" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2454" y="762" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="TranslationID" selected="True" type="Int32" size="4" />
+                <SelectField field="text" selected="True" rename="Translated_Text" />
+                <SelectField field="to" selected="True" rename="To_Language" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="TranslationID" source="CrossTab:Group:Concat:" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="2646" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="OriginalText_ID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="OriginalText_ID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_OriginalText_ID" selected="False" rename="Right_OriginalText_ID" input="Right_" />
+                    <SelectField field="Right_Original_Text" selected="False" rename="Right_Original_Text" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="TranslationID" source="Formula: [TranslationID] + 1" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="TranslationID" source="Formula: [TranslationID] + 1" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="2550" y="762" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[TranslationID] + 1" field="TranslationID" size="4" type="Int32" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[TranslationID = [TranslationID] + 1
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="TranslationID" source="Formula: [TranslationID] + 1" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="2924" y="512" width="836" height="499" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption><![CDATA[ ]]></Caption>
+          <Style TextColor="#314c4a" FillColor="#e7ceff" BorderColor="#000000" Transparency="1" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="83">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="2946" y="918" width="804" height="84" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Suppress missing fields error and lookup language natural names from 2 digit codes</Text>
+              <Font name="Segoe UI" size="20.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="231" g="206" b="255" />
+              <Shape shape="3" />
+              <Justification Justification="7" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="84">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="2946" y="546" width="24" height="12" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[ ]]></Text>
+              <Font name="Segoe UI" size="20.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="231" g="206" b="255" />
+              <Shape shape="3" />
+              <Justification Justification="7" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="3678" y="714" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\peter\AppData\Local\Temp\Engine_10696_3d6a76aaf5f50845ab162c3db31506cc_\Engine_10696_98b2e5682d8c1f4e87822d7a2d02a7f3~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="73">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="3078" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Ignore</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="True" />
+              <OutputOrder>
+                <Connection>#2</Connection>
+                <Connection>#1</Connection>
+              </OutputOrder>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="Original_Text" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="TranslationID" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="Original_Language_Detected" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Detected_Language_Score" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Translated_Text" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="To_Language" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="74">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="2934" y="749" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="0" />
+              <Fields>
+                <Field name="OriginalText_ID" />
+                <Field name="Original_Text" />
+                <Field name="Original_Language_Detected" />
+                <Field name="Detected_Language_Score" />
+                <Field name="TranslationID" />
+                <Field name="Translated_Text" />
+                <Field name="To_Language" />
+              </Fields>
+              <Data />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Expected Headers</AnnotationText>
+              <DefaultAnnotationText>Expected Headers</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Original_Text" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Original_Language_Detected" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Detected_Language_Score" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="TranslationID" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Translated_Text" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="To_Language" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="3198" y="738" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="111" />
+              <Fields>
+                <Field name="Language" />
+                <Field name="Language_Code" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>English // English</c>
+                  <c>en</c>
+                </r>
+                <r>
+                  <c>Afrikaans // Afrikaans</c>
+                  <c>af</c>
+                </r>
+                <r>
+                  <c>Albanian // Shqip</c>
+                  <c>sq</c>
+                </r>
+                <r>
+                  <c>Amharic // አማርኛ</c>
+                  <c>am</c>
+                </r>
+                <r>
+                  <c>Arabic // العربية</c>
+                  <c>ar</c>
+                </r>
+                <r>
+                  <c>Armenian // Հայերեն</c>
+                  <c>hy</c>
+                </r>
+                <r>
+                  <c>Assamese // অসমীয়া</c>
+                  <c>as</c>
+                </r>
+                <r>
+                  <c>Azerbaijani // Azərbaycan</c>
+                  <c>az</c>
+                </r>
+                <r>
+                  <c>Bangla // বাংলা</c>
+                  <c>bn</c>
+                </r>
+                <r>
+                  <c>Bashkir // Bashkir</c>
+                  <c>ba</c>
+                </r>
+                <r>
+                  <c>Basque // Euskara</c>
+                  <c>eu</c>
+                </r>
+                <r>
+                  <c>Bosnian // Bosnian</c>
+                  <c>bs</c>
+                </r>
+                <r>
+                  <c>Bulgarian // Български</c>
+                  <c>bg</c>
+                </r>
+                <r>
+                  <c>Cantonese (Traditional) // 粵語 (繁體)</c>
+                  <c>yue</c>
+                </r>
+                <r>
+                  <c>Catalan // Català</c>
+                  <c>ca</c>
+                </r>
+                <r>
+                  <c>Chinese (Literary) // 中文 (文言文)</c>
+                  <c>lzh</c>
+                </r>
+                <r>
+                  <c>Chinese Simplified // 中文 (简体)</c>
+                  <c>zh-Hans</c>
+                </r>
+                <r>
+                  <c>Chinese Traditional // 繁體中文 (繁體)</c>
+                  <c>zh-Hant</c>
+                </r>
+                <r>
+                  <c>Croatian // Hrvatski</c>
+                  <c>hr</c>
+                </r>
+                <r>
+                  <c>Czech // Čeština</c>
+                  <c>cs</c>
+                </r>
+                <r>
+                  <c>Danish // Dansk</c>
+                  <c>da</c>
+                </r>
+                <r>
+                  <c>Dari // دری</c>
+                  <c>prs</c>
+                </r>
+                <r>
+                  <c>Divehi // ދިވެހިބަސް</c>
+                  <c>dv</c>
+                </r>
+                <r>
+                  <c>Dutch // Nederlands</c>
+                  <c>nl</c>
+                </r>
+                <r>
+                  <c>Estonian // Eesti</c>
+                  <c>et</c>
+                </r>
+                <r>
+                  <c>Faroese // Føroyskt</c>
+                  <c>fo</c>
+                </r>
+                <r>
+                  <c>Fijian // Na Vosa Vakaviti</c>
+                  <c>fj</c>
+                </r>
+                <r>
+                  <c>Filipino // Filipino</c>
+                  <c>fil</c>
+                </r>
+                <r>
+                  <c>Finnish // Suomi</c>
+                  <c>fi</c>
+                </r>
+                <r>
+                  <c>French // Français</c>
+                  <c>fr</c>
+                </r>
+                <r>
+                  <c>French (Canada) // Français (Canada)</c>
+                  <c>fr-CA</c>
+                </r>
+                <r>
+                  <c>Galician // Galego</c>
+                  <c>gl</c>
+                </r>
+                <r>
+                  <c>Georgian // ქართული</c>
+                  <c>ka</c>
+                </r>
+                <r>
+                  <c>German // Deutsch</c>
+                  <c>de</c>
+                </r>
+                <r>
+                  <c>Greek // Ελληνικά</c>
+                  <c>el</c>
+                </r>
+                <r>
+                  <c>Gujarati // ગુજરાતી</c>
+                  <c>gu</c>
+                </r>
+                <r>
+                  <c>Haitian Creole // Haitian Creole</c>
+                  <c>ht</c>
+                </r>
+                <r>
+                  <c>Hebrew // עברית</c>
+                  <c>he</c>
+                </r>
+                <r>
+                  <c>Hindi // हिन्दी</c>
+                  <c>hi</c>
+                </r>
+                <r>
+                  <c>Hmong Daw // Hmong Daw</c>
+                  <c>mww</c>
+                </r>
+                <r>
+                  <c>Hungarian // Magyar</c>
+                  <c>hu</c>
+                </r>
+                <r>
+                  <c>Icelandic // Íslenska</c>
+                  <c>is</c>
+                </r>
+                <r>
+                  <c>Indonesian // Indonesia</c>
+                  <c>id</c>
+                </r>
+                <r>
+                  <c>Inuinnaqtun // Inuinnaqtun</c>
+                  <c>ikt</c>
+                </r>
+                <r>
+                  <c>Inuktitut // ᐃᓄᒃᑎᑐᑦ</c>
+                  <c>iu</c>
+                </r>
+                <r>
+                  <c>Inuktitut (Latin) // Inuktitut (Latin)</c>
+                  <c>iu-Latn</c>
+                </r>
+                <r>
+                  <c>Irish // Gaeilge</c>
+                  <c>ga</c>
+                </r>
+                <r>
+                  <c>Italian // Italiano</c>
+                  <c>it</c>
+                </r>
+                <r>
+                  <c>Japanese // 日本語</c>
+                  <c>ja</c>
+                </r>
+                <r>
+                  <c>Kannada // ಕನ್ನಡ</c>
+                  <c>kn</c>
+                </r>
+                <r>
+                  <c>Kazakh // Қазақ Тілі</c>
+                  <c>kk</c>
+                </r>
+                <r>
+                  <c>Khmer // ខ្មែរ</c>
+                  <c>km</c>
+                </r>
+                <r>
+                  <c>Klingon (Latin) // Klingon (Latin)</c>
+                  <c>tlh-Latn</c>
+                </r>
+                <r>
+                  <c>Klingon (pIqaD) // Klingon (pIqaD)</c>
+                  <c>tlh-Piqd</c>
+                </r>
+                <r>
+                  <c>Korean // 한국어</c>
+                  <c>ko</c>
+                </r>
+                <r>
+                  <c>Kurdish (Central) // Kurdî (Navîn)</c>
+                  <c>ku</c>
+                </r>
+                <r>
+                  <c>Kurdish (Northern) // Kurdî (Bakur)</c>
+                  <c>kmr</c>
+                </r>
+                <r>
+                  <c>Kyrgyz // Кыргызча</c>
+                  <c>ky</c>
+                </r>
+                <r>
+                  <c>Lao // ລາວ</c>
+                  <c>lo</c>
+                </r>
+                <r>
+                  <c>Latvian // Latviešu</c>
+                  <c>lv</c>
+                </r>
+                <r>
+                  <c>Lithuanian // Lietuvių</c>
+                  <c>lt</c>
+                </r>
+                <r>
+                  <c>Macedonian // Македонски</c>
+                  <c>mk</c>
+                </r>
+                <r>
+                  <c>Malagasy // Malagasy</c>
+                  <c>mg</c>
+                </r>
+                <r>
+                  <c>Malay // Melayu</c>
+                  <c>ms</c>
+                </r>
+                <r>
+                  <c>Malayalam // മലയാളം</c>
+                  <c>ml</c>
+                </r>
+                <r>
+                  <c>Maltese // Malti</c>
+                  <c>mt</c>
+                </r>
+                <r>
+                  <c>Māori // Te Reo Māori</c>
+                  <c>mi</c>
+                </r>
+                <r>
+                  <c>Marathi // मराठी</c>
+                  <c>mr</c>
+                </r>
+                <r>
+                  <c>Mongolian (Cyrillic) // Mongolian (Cyrillic)</c>
+                  <c>mn-Cyrl</c>
+                </r>
+                <r>
+                  <c>Mongolian (Traditional) // ᠮᠣᠩᠭᠣᠯ ᠬᠡᠯᠡ</c>
+                  <c>mn-Mong</c>
+                </r>
+                <r>
+                  <c>Myanmar (Burmese) // မြန်မာ</c>
+                  <c>my</c>
+                </r>
+                <r>
+                  <c>Nepali // नेपाली</c>
+                  <c>ne</c>
+                </r>
+                <r>
+                  <c>Norwegian // Norsk Bokmål</c>
+                  <c>nb</c>
+                </r>
+                <r>
+                  <c>Odia // ଓଡ଼ିଆ</c>
+                  <c>or</c>
+                </r>
+                <r>
+                  <c>Pashto // پښتو</c>
+                  <c>ps</c>
+                </r>
+                <r>
+                  <c>Persian // فارسی</c>
+                  <c>fa</c>
+                </r>
+                <r>
+                  <c>Polish // Polski</c>
+                  <c>pl</c>
+                </r>
+                <r>
+                  <c>Portuguese (Brazil) // Português (Brasil)</c>
+                  <c>pt</c>
+                </r>
+                <r>
+                  <c>Portuguese (Portugal) // Português (Portugal)</c>
+                  <c>pt-PT</c>
+                </r>
+                <r>
+                  <c>Punjabi // ਪੰਜਾਬੀ</c>
+                  <c>pa</c>
+                </r>
+                <r>
+                  <c>Querétaro Otomi // Hñähñu</c>
+                  <c>otq</c>
+                </r>
+                <r>
+                  <c>Romanian // Română</c>
+                  <c>ro</c>
+                </r>
+                <r>
+                  <c>Russian // Русский</c>
+                  <c>ru</c>
+                </r>
+                <r>
+                  <c>Samoan // Gagana Sāmoa</c>
+                  <c>sm</c>
+                </r>
+                <r>
+                  <c>Serbian (Cyrillic) // Српски (ћирилица)</c>
+                  <c>sr-Cyrl</c>
+                </r>
+                <r>
+                  <c>Serbian (Latin) // Srpski (latinica)</c>
+                  <c>sr-Latn</c>
+                </r>
+                <r>
+                  <c>Slovak // Slovenčina</c>
+                  <c>sk</c>
+                </r>
+                <r>
+                  <c>Slovenian // Slovenščina</c>
+                  <c>sl</c>
+                </r>
+                <r>
+                  <c>Somali // Soomaali</c>
+                  <c>so</c>
+                </r>
+                <r>
+                  <c>Spanish // Español</c>
+                  <c>es</c>
+                </r>
+                <r>
+                  <c>Swahili // Kiswahili</c>
+                  <c>sw</c>
+                </r>
+                <r>
+                  <c>Swedish // Svenska</c>
+                  <c>sv</c>
+                </r>
+                <r>
+                  <c>Tahitian // Reo Tahiti</c>
+                  <c>ty</c>
+                </r>
+                <r>
+                  <c>Tamil // தமிழ்</c>
+                  <c>ta</c>
+                </r>
+                <r>
+                  <c>Tatar // Татар</c>
+                  <c>tt</c>
+                </r>
+                <r>
+                  <c>Telugu // తెలుగు</c>
+                  <c>te</c>
+                </r>
+                <r>
+                  <c>Thai // ไทย</c>
+                  <c>th</c>
+                </r>
+                <r>
+                  <c>Tibetan // བོད་སྐད་</c>
+                  <c>bo</c>
+                </r>
+                <r>
+                  <c>Tigrinya // ትግር</c>
+                  <c>ti</c>
+                </r>
+                <r>
+                  <c>Tongan // Lea Fakatonga</c>
+                  <c>to</c>
+                </r>
+                <r>
+                  <c>Turkish // Türkçe</c>
+                  <c>tr</c>
+                </r>
+                <r>
+                  <c>Turkmen // Türkmen Dili</c>
+                  <c>tk</c>
+                </r>
+                <r>
+                  <c>Ukrainian // Українська</c>
+                  <c>uk</c>
+                </r>
+                <r>
+                  <c>Upper Sorbian // Hornjoserbšćina</c>
+                  <c>hsb</c>
+                </r>
+                <r>
+                  <c>Urdu // اردو</c>
+                  <c>ur</c>
+                </r>
+                <r>
+                  <c>Uyghur // ئۇيغۇرچە</c>
+                  <c>ug</c>
+                </r>
+                <r>
+                  <c>Uzbek (Latin) // Uzbek (Latin)</c>
+                  <c>uz</c>
+                </r>
+                <r>
+                  <c>Vietnamese // Tiếng Việt</c>
+                  <c>vi</c>
+                </r>
+                <r>
+                  <c>Welsh // Cymraeg</c>
+                  <c>cy</c>
+                </r>
+                <r>
+                  <c>Yucatec Maya // Yucatec Maya</c>
+                  <c>yua</c>
+                </r>
+                <r>
+                  <c>Zulu // Isi-Zulu</c>
+                  <c>zu</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Language Name &amp; Code lookup
+Manually pasted from disabled container process below</AnnotationText>
+              <DefaultAnnotationText>Language Name &amp; Code lookup</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Language" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Language_Code" size="2147483647" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+            <Position x="3306" y="630" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldFind>Original_Language_Detected</FieldFind>
+              <FieldSearch>Language_Code</FieldSearch>
+              <ReplaceFoundField>Language_Code</ReplaceFoundField>
+              <FindMode>FindWhole</FindMode>
+              <NoCase value="False" />
+              <MatchWholeWord value="False" />
+              <ReplaceMode>Append</ReplaceMode>
+              <ReplaceMultipleFound value="True" />
+              <ReplaceAppendFields>
+                <Field field="Language" />
+              </ReplaceAppendFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="Original_Text" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="TranslationID" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="Original_Language_Detected" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Detected_Language_Score" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Translated_Text" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="To_Language" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Language" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+            <Position x="3522" y="642" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldFind>To_Language</FieldFind>
+              <FieldSearch>Language_Code</FieldSearch>
+              <ReplaceFoundField>Language_Code</ReplaceFoundField>
+              <FindMode>FindWhole</FindMode>
+              <NoCase value="False" />
+              <MatchWholeWord value="False" />
+              <ReplaceMode>Append</ReplaceMode>
+              <ReplaceMultipleFound value="True" />
+              <ReplaceAppendFields>
+                <Field field="Language" />
+              </ReplaceAppendFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="Original_Text" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="Original_Language_Detected_Code" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Original_Language_Detected" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Detected_Language_Score" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="TranslationID" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="Translated_Text" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="To_Language" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Language" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="3618" y="642" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="OriginalText_ID" selected="True" />
+                <SelectField field="Original_Text" selected="True" />
+                <SelectField field="Original_Language_Detected_Code" selected="True" />
+                <SelectField field="Original_Language_Detected" selected="True" />
+                <SelectField field="Detected_Language_Score" selected="True" />
+                <SelectField field="TranslationID" selected="True" />
+                <SelectField field="Translated_Text" selected="True" />
+                <SelectField field="To_Language" selected="True" rename="To_Language_Code" />
+                <SelectField field="Language" selected="True" rename="To_Language" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="Original_Text" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="Original_Language_Detected_Code" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Original_Language_Detected" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Detected_Language_Score" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="TranslationID" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="Translated_Text" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="To_Language_Code" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="To_Language" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="3402" y="630" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="OriginalText_ID" selected="True" />
+                <SelectField field="Original_Text" selected="True" />
+                <SelectField field="Original_Language_Detected" selected="True" rename="Original_Language_Detected_Code" />
+                <SelectField field="Language" selected="True" rename="Original_Language_Detected" />
+                <SelectField field="Detected_Language_Score" selected="True" />
+                <SelectField field="TranslationID" selected="True" />
+                <SelectField field="Translated_Text" selected="True" />
+                <SelectField field="To_Language" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="Original_Text" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="Original_Language_Detected_Code" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Original_Language_Detected" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Detected_Language_Score" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="TranslationID" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="Translated_Text" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="To_Language" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="106">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="212" y="500" width="956" height="356" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption><![CDATA[ ]]></Caption>
+          <Style TextColor="#314c4a" FillColor="#aeffae" BorderColor="#000000" Transparency="1" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="104">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="258" y="534" width="24" height="23" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[ ]]></Text>
+              <Font name="Segoe UI" size="20.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="149" g="202" b="255" />
+              <Shape shape="3" />
+              <Justification Justification="7" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="105">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="222" y="798" width="936" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Prepare key information for the API Call</Text>
+              <Font name="Segoe UI" size="20.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="174" g="255" b="174" />
+              <Shape shape="3" />
+              <Justification Justification="7" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="642" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Append API Headers to all records</AnnotationText>
+              <DefaultAnnotationText>Append API Headers to all records</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Ocp-Apim-Subscription-key" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Ocp-Apim-Subscription-Region" size="2147483647" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1002" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="'https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&amp;to=en&amp;to=it'" field="URL" size="1073741823" type="V_WString" />
+                <FormulaField expression="'[&#xA;    {&quot;Text&quot;:&quot;'+[Original_Text]+'&quot;}&#xA;]'" field="Text" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Prepare API URL and Payload</AnnotationText>
+              <DefaultAnnotationText>URL = 'https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&amp;t...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Ocp-Apim-Subscription-key" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Ocp-Apim-Subscription-Region" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: 'https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&amp;to=en&amp;to=it'" type="V_WString" />
+                <Field name="Text" size="1073741823" source="Formula: '[&#xA;    {&quot;Text&quot;:&quot;'+[Original_Text]+'&quot;}&#xA;]'" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="378" y="606" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>OriginalText_ID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Add ID Field</AnnotationText>
+              <DefaultAnnotationText>Add ID Field</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="510" y="678" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="Ocp-Apim-Subscription-key" />
+                <Field name="Ocp-Apim-Subscription-Region" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>___API KEY GOES HERE___</c>
+                  <c>westeurope</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>API Details</AnnotationText>
+              <DefaultAnnotationText>API Details</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Ocp-Apim-Subscription-key" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Ocp-Apim-Subscription-Region" size="2147483647" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="258" y="606" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Text field to translate" selected="True" rename="Original_Text" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Selection of field to be translated</AnnotationText>
+              <DefaultAnnotationText>Selection of field to be translated</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Original_Text" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="109">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1196" y="499" width="680" height="356" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption><![CDATA[ ]]></Caption>
+          <Style TextColor="#314c4a" FillColor="#ffbc79" BorderColor="#000000" Transparency="1" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="107">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1206" y="798" width="660" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Send API calls and parse the JSON response</Text>
+              <Font name="Segoe UI" size="20.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="255" g="188" b="121" />
+              <Shape shape="3" />
+              <Justification Justification="7" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="108">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1206" y="533" width="24" height="12" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[ ]]></Text>
+              <Font name="Segoe UI" size="20.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="255" g="188" b="121" />
+              <Shape shape="3" />
+              <Justification Justification="7" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+            <Position x="1326" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <URLField>URL</URLField>
+              <OutputMode>String</OutputMode>
+              <CodePage>65001</CodePage>
+              <EncodeURLs value="True" />
+              <Headers>
+                <NameValues>
+                  <Item name="Content-Type" value="application/json; charset=UTF-8" />
+                </NameValues>
+                <Fields orderChanged="False">
+                  <Field name="Ocp-Apim-Subscription-key" />
+                  <Field name="Ocp-Apim-Subscription-Region" />
+                  <Field name="OriginalText_ID" selected="False" />
+                  <Field name="Original_Text" selected="False" />
+                  <Field name="URL" selected="False" />
+                  <Field name="Text" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </Fields>
+              </Headers>
+              <Payload>
+                <HTTPAction>POST</HTTPAction>
+                <QueryStringBodyMode>Field</QueryStringBodyMode>
+                <Field>Text</Field>
+              </Payload>
+              <numConnections>2</numConnections>
+              <Timeout>600</Timeout>
+              <EnableRPM value="False" />
+              <Password />
+              <UserName />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Ocp-Apim-Subscription-key" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Ocp-Apim-Subscription-Region" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="URL" size="1073741823" source="Formula: 'https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&amp;to=en&amp;to=it'" type="V_WString" />
+                <Field name="Text" size="1073741823" source="Formula: '[&#xA;    {&quot;Text&quot;:&quot;'+[Original_Text]+'&quot;}&#xA;]'" type="V_WString" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+            <Position x="1614" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JSON_Field>DownloadData</JSON_Field>
+              <IncludeInOutput value="False" />
+              <SingleField value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1482" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Ocp-Apim-Subscription-key" selected="False" />
+                <SelectField field="Ocp-Apim-Subscription-Region" selected="False" />
+                <SelectField field="URL" selected="False" />
+                <SelectField field="Text" selected="False" />
+                <SelectField field="DownloadHeaders" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OriginalText_ID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Original_Text" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="197" y="1037" width="2017" height="302" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption><![CDATA[ ]]></Caption>
+          <Style TextColor="#314c4a" FillColor="#ffff97" BorderColor="#000000" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="222" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="URL" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>https://api.cognitive.microsofttranslator.com/languages?api-version=3.0</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="URL" size="2147483647" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+            <Position x="353" y="1097" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <URLField>URL</URLField>
+              <OutputMode>String</OutputMode>
+              <CodePage>65001</CodePage>
+              <EncodeURLs value="True" />
+              <Headers>
+                <NameValues />
+                <Fields orderChanged="False">
+                  <Field name="URL" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </Fields>
+              </Headers>
+              <Payload>
+                <HTTPAction>GET</HTTPAction>
+                <QueryStringBodyMode>Compose</QueryStringBodyMode>
+                <ComposeNameValues />
+                <ComposeFields orderChanged="False">
+                  <Field name="URL" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </ComposeFields>
+              </Payload>
+              <numConnections>2</numConnections>
+              <Timeout>600</Timeout>
+              <EnableRPM value="False" />
+              <Password />
+              <UserName />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="URL" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+            <Position x="486" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JSON_Field>DownloadData</JSON_Field>
+              <IncludeInOutput value="False" />
+              <SingleField value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="URL" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="2130" y="1086" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\peter\AppData\Local\Temp\Engine_21296_de894df0c1121e45a49161fa26036748_\Engine_21296_dd5e2a80d4006140843a52b43645c945~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="630" y="1097" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>JSON_Name</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>JSON_Name</RootName>
+              <Delimeters value="." />
+              <NumFields value="3" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="URL" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name3" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="774" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="DownloadHeaders" selected="False" />
+                <SelectField field="JSON_Name" selected="False" />
+                <SelectField field="JSON_Name2" selected="True" rename="Language_Code" />
+                <SelectField field="JSON_Name3" selected="True" rename="Header" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="URL" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="Language_Code" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="Header" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="1026" y="1086" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="Language_Code" />
+              </GroupFields>
+              <HeaderField field="Header" />
+              <DataField field="JSON_ValueString" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from JSON_Name" name="Language_Code" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field name="dir" size="2048" source="CrossTab:Header:Header:dir:Concat:" type="V_WString" />
+                <Field name="name" size="2048" source="CrossTab:Header:Header:name:Concat:" type="V_WString" />
+                <Field name="nativeName" size="2048" source="CrossTab:Header:Header:nativeName:Concat:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="882" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>JSON_Name1</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2022-09-27 18:50:28</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>translation</Operand>
+                  <StartDate>2022-09-27 18:50:28</StartDate>
+                  <EndDate>2022-09-27 18:50:28</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[JSON_Name1] = "translation"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="URL" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="Language_Code" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="Header" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="URL" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="JSON_Name1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="Language_Code" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="Header" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1134" y="1086" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from JSON_Name" name="Language_Code" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field name="dir" size="2048" source="CrossTab:Header:Header:dir:Concat:" type="V_WString" />
+                <Field name="name" size="2048" source="CrossTab:Header:Header:name:Concat:" type="V_WString" />
+                <Field name="nativeName" size="2048" source="CrossTab:Header:Header:nativeName:Concat:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1266" y="1086" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="name" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>name - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from JSON_Name" name="Language_Code" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field name="dir" size="2048" source="CrossTab:Header:Header:dir:Concat:" type="V_WString" />
+                <Field name="name" size="2048" source="CrossTab:Header:Header:name:Concat:" type="V_WString" />
+                <Field name="nativeName" size="2048" source="CrossTab:Header:Header:nativeName:Concat:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1410" y="1086" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[name] +' // '+[nativeName]" field="Language" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Language = [name] +' // '+[nativeName]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from JSON_Name" name="Language_Code" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field name="dir" size="2048" source="CrossTab:Header:Header:dir:Concat:" type="V_WString" />
+                <Field name="name" size="2048" source="CrossTab:Header:Header:name:Concat:" type="V_WString" />
+                <Field name="nativeName" size="2048" source="CrossTab:Header:Header:nativeName:Concat:" type="V_WString" />
+                <Field name="Language" size="1073741823" source="Formula: [name] +' // '+[nativeName]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1530" y="1086" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Language" selected="True" />
+                <SelectField field="Language_Code" selected="True" />
+                <SelectField field="dir" selected="False" />
+                <SelectField field="name" selected="False" />
+                <SelectField field="nativeName" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Language" size="1073741823" source="Formula: [name] +' // '+[nativeName]" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="Language_Code" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1650" y="1086" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>Language_Code</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2022-09-27 18:55:11</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <StartDate>2022-09-27 18:55:11</StartDate>
+                  <EndDate>2022-09-27 18:55:11</EndDate>
+                  <Operand>en</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Language_Code] = "en"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="Language" size="1073741823" source="Formula: [name] +' // '+[nativeName]" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="Language_Code" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="Language" size="1073741823" source="Formula: [name] +' // '+[nativeName]" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="Language_Code" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1806" y="1086" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Ignore</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="True" />
+              <OutputOrder>
+                <Connection>#1</Connection>
+                <Connection>#2</Connection>
+              </OutputOrder>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Language" size="1073741823" source="Formula: [name] +' // '+[nativeName]" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="Language_Code" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1914" y="1086" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="// to copy and paste into the interface tool&#xA;[Language]+':'+[Language_Code]" field="LIST VALUES" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>LIST VALUES = // to copy and paste into the interface tool
+[Language]+':'+[Langu...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Language" size="1073741823" source="Formula: [name] +' // '+[nativeName]" type="V_WString" />
+                <Field description="TextToColumns: Parsed from JSON_Name" name="Language_Code" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field name="LIST VALUES" size="1073741823" source="Formula: // to copy and paste into the interface tool&#xA;[Language]+':'+[Language_Code]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2034" y="1086" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Language" selected="False" />
+                <SelectField field="Language_Code" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="LIST VALUES" size="1073741823" source="Formula: // to copy and paste into the interface tool&#xA;[Language]+':'+[Language_Code]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="2130" y="1194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\peter\AppData\Local\Temp\Engine_21296_de894df0c1121e45a49161fa26036748_\Engine_21296_a17db367a3dc4242b8c904c852251861~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="110">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="246" y="1230" width="804" height="84" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>MANUAL RUN to prepare the list of language codes and names for the macro language choices</Text>
+              <Font name="Segoe UI" size="20.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="231" g="206" b="255" />
+              <Shape shape="3" />
+              <Justification Justification="7" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="103">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="236" y="32" width="937" height="379" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption><![CDATA[ ]]></Caption>
+          <Style TextColor="#314c4a" FillColor="#dadada" BorderColor="#000000" Transparency="1" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="101">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="342" y="66" width="660" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Interface Tools for user input of macro configuration</Text>
+              <Font name="Segoe UI" size="20.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="218" g="218" b="218" />
+              <Shape shape="3" />
+              <Justification Justification="7" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="102">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="462" y="258" width="24" height="12" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[ ]]></Text>
+              <Font name="Segoe UI" size="20.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="218" g="218" b="218" />
+              <Shape shape="3" />
+              <Justification Justification="7" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.ListBox">
+            <Position x="1002" y="174" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>List Box (47)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="1014" y="342" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+            <Position x="726" y="174" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Text Box (52)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="738" y="342" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Error.Error">
+            <Position x="798" y="246" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>IsEmpty([#1])
+You must enter an API Key to use this macro</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+            <Position x="246" y="173" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Drop Down (57)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="258" y="330" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="70">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+            <Position x="486" y="174" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Text Box (52)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="71">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="510" y="342" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="72">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Error.Error">
+            <Position x="570" y="246" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>IsEmpty([#1])
+You must enter an API Key to use this macro</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="58" Connection="Action" />
+      <Destination ToolID="55" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Question" />
+      <Destination ToolID="57" Connection="Question Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="True" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="False" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="True" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="26" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="26" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Join" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="61" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="61" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="63" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="63" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="50" Connection="Action" />
+      <Destination ToolID="8" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="7" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="7" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="True" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="43" Connection="True" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="43" Connection="False" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="47" Connection="Question" />
+      <Destination ToolID="50" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="52" Connection="Question" />
+      <Destination ToolID="53" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="52" Connection="Question" />
+      <Destination ToolID="54" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="53" Connection="Action" />
+      <Destination ToolID="2" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="71" Connection="Action" />
+      <Destination ToolID="2" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="57" Connection="Question" />
+      <Destination ToolID="58" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="70" Connection="Question" />
+      <Destination ToolID="71" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="70" Connection="Question" />
+      <Destination ToolID="72" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (52)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (70)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Drop Down (57)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>List Box (47)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="False" />
+      <Name>Azure Text Translate</Name>
+      <Description>This macro will translate a text field from/to multiple languages.</Description>
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName>Connectors</CategoryName>
+      <SearchTags>Translate, Translation, Translator, Microsoft, Azure, API, Google Translate, Language, Languages, Cognitive Services</SearchTags>
+      <Author>Peter Gamble-Beresford</Author>
+      <Company>The Information Lab</Company>
+      <Copyright>2022</Copyright>
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="b0c79864-c2eb-4833-ab33-af1279f436e2" />
+      <Telemetry>
+        <PreviousWorkflowId value="22b3834b-db74-47ff-b7a2-7eb0fcae71c0" />
+        <OriginWorkflowId value="09fe32d1-3e51-468b-a277-fd7ec3a4ce8d" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="50" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>&amp;to=en&amp;to=it</ReplaceText>
+              <Destination>8/FormulaFields/FormulaField[@field='URL']/@expression</Destination>
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="53" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>2/Data/r[1]/c[1]</Destination>
+              <Mapping>Update Cell</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>row	1
+column	1</DynamicConfiguration>
+              <DefaultConfiguration value="True" />
+            </Action>
+            <Action>
+              <Type>Error</Type>
+              <Description>You must enter an API Key to use this macro</Description>
+              <ToolId value="54" />
+              <Expression>IsEmpty([#1])</Expression>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="58" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>55/SelectFields/SelectField[@field='Text field to translate']/@field</Destination>
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="71" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>2/Data/r[1]/c[2]</Destination>
+              <Mapping>Update Cell</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>row	1
+column	2</DynamicConfiguration>
+              <DefaultConfiguration value="False" />
+            </Action>
+            <Action>
+              <Type>Error</Type>
+              <Description>You must enter a region to use this macro</Description>
+              <ToolId value="72" />
+              <Expression>IsEmpty([#1])</Expression>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Translation Macro Configuration</Description>
+          <Name>Tab (46)</Name>
+          <ToolId value="46" />
+          <Questions>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Enter your API Key</Description>
+              <Name>Text Box (52)</Name>
+              <ToolId value="52" />
+              <Default />
+              <Password value="True" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Enter your Microsoft Azure Region</Description>
+              <Name>Text Box (70)</Name>
+              <ToolId value="70" />
+              <Default>westeurope</Default>
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Choose the text field to translate</Description>
+              <Name>Drop Down (57)</Name>
+              <ToolId value="57" />
+              <Multiple value="False" />
+              <Default />
+              <Mode>MacroField</Mode>
+              <MacroField_InputTool value="1" />
+              <Field_IncludeNone value="False" />
+              <MacroField_FilterTypes>String,WString,V_String,V_WString</MacroField_FilterTypes>
+            </Question>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Choose language(s) to translate to:</Description>
+              <Name>List Box (47)</Name>
+              <ToolId value="47" />
+              <Multiple value="True" />
+              <Multiple_Custom value="True" />
+              <Multiple_Start>&amp;to=</Multiple_Start>
+              <Multiple_Separator>&amp;to=</Multiple_Separator>
+              <Multiple_End />
+              <Multiple_Default value="False" />
+              <Mode>Manual</Mode>
+              <Manual_Values><![CDATA[English // English5419541n5148905f1n0941f5809en
+Afrikaans // Afrikaans5419541n5148905f1n0941f5809af
+Albanian // Shqip5419541n5148905f1n0941f5809sq
+Amharic // አማርኛ5419541n5148905f1n0941f5809am
+Arabic // العربية5419541n5148905f1n0941f5809ar
+Armenian // Հայերեն5419541n5148905f1n0941f5809hy
+Assamese // অসমীয়া5419541n5148905f1n0941f5809as
+Azerbaijani // Azərbaycan5419541n5148905f1n0941f5809az
+Bangla // বাংলা5419541n5148905f1n0941f5809bn
+Bashkir // Bashkir5419541n5148905f1n0941f5809ba
+Basque // Euskara5419541n5148905f1n0941f5809eu
+Bosnian // Bosnian5419541n5148905f1n0941f5809bs
+Bulgarian // Български5419541n5148905f1n0941f5809bg
+Cantonese (Traditional) // 粵語 (繁體)5419541n5148905f1n0941f5809yue
+Catalan // Català5419541n5148905f1n0941f5809ca
+Chinese (Literary) // 中文 (文言文)5419541n5148905f1n0941f5809lzh
+Chinese Simplified // 中文 (简体)5419541n5148905f1n0941f5809zh-Hans
+Chinese Traditional // 繁體中文 (繁體)5419541n5148905f1n0941f5809zh-Hant
+Croatian // Hrvatski5419541n5148905f1n0941f5809hr
+Czech // Čeština5419541n5148905f1n0941f5809cs
+Danish // Dansk5419541n5148905f1n0941f5809da
+Dari // دری5419541n5148905f1n0941f5809prs
+Divehi // ދިވެހިބަސް5419541n5148905f1n0941f5809dv
+Dutch // Nederlands5419541n5148905f1n0941f5809nl
+Estonian // Eesti5419541n5148905f1n0941f5809et
+Faroese // Føroyskt5419541n5148905f1n0941f5809fo
+Fijian // Na Vosa Vakaviti5419541n5148905f1n0941f5809fj
+Filipino // Filipino5419541n5148905f1n0941f5809fil
+Finnish // Suomi5419541n5148905f1n0941f5809fi
+French // Français5419541n5148905f1n0941f5809fr
+French (Canada) // Français (Canada)5419541n5148905f1n0941f5809fr-CA
+Galician // Galego5419541n5148905f1n0941f5809gl
+Georgian // ქართული5419541n5148905f1n0941f5809ka
+German // Deutsch5419541n5148905f1n0941f5809de
+Greek // Ελληνικά5419541n5148905f1n0941f5809el
+Gujarati // ગુજરાતી5419541n5148905f1n0941f5809gu
+Haitian Creole // Haitian Creole5419541n5148905f1n0941f5809ht
+Hebrew // עברית5419541n5148905f1n0941f5809he
+Hindi // हिन्दी5419541n5148905f1n0941f5809hi
+Hmong Daw // Hmong Daw5419541n5148905f1n0941f5809mww
+Hungarian // Magyar5419541n5148905f1n0941f5809hu
+Icelandic // Íslenska5419541n5148905f1n0941f5809is
+Indonesian // Indonesia5419541n5148905f1n0941f5809id
+Inuinnaqtun // Inuinnaqtun5419541n5148905f1n0941f5809ikt
+Inuktitut // ᐃᓄᒃᑎᑐᑦ5419541n5148905f1n0941f5809iu
+Inuktitut (Latin) // Inuktitut (Latin)5419541n5148905f1n0941f5809iu-Latn
+Irish // Gaeilge5419541n5148905f1n0941f5809ga
+Italian // Italiano5419541n5148905f1n0941f5809it
+Japanese // 日本語5419541n5148905f1n0941f5809ja
+Kannada // ಕನ್ನಡ5419541n5148905f1n0941f5809kn
+Kazakh // Қазақ Тілі5419541n5148905f1n0941f5809kk
+Khmer // ខ្មែរ5419541n5148905f1n0941f5809km
+Klingon (Latin) // Klingon (Latin)5419541n5148905f1n0941f5809tlh-Latn
+Klingon (pIqaD) // Klingon (pIqaD)5419541n5148905f1n0941f5809tlh-Piqd
+Korean // 한국어5419541n5148905f1n0941f5809ko
+Kurdish (Central) // Kurdî (Navîn)5419541n5148905f1n0941f5809ku
+Kurdish (Northern) // Kurdî (Bakur)5419541n5148905f1n0941f5809kmr
+Kyrgyz // Кыргызча5419541n5148905f1n0941f5809ky
+Lao // ລາວ5419541n5148905f1n0941f5809lo
+Latvian // Latviešu5419541n5148905f1n0941f5809lv
+Lithuanian // Lietuvių5419541n5148905f1n0941f5809lt
+Macedonian // Македонски5419541n5148905f1n0941f5809mk
+Malagasy // Malagasy5419541n5148905f1n0941f5809mg
+Malay // Melayu5419541n5148905f1n0941f5809ms
+Malayalam // മലയാളം5419541n5148905f1n0941f5809ml
+Maltese // Malti5419541n5148905f1n0941f5809mt
+Māori // Te Reo Māori5419541n5148905f1n0941f5809mi
+Marathi // मराठी5419541n5148905f1n0941f5809mr
+Mongolian (Cyrillic) // Mongolian (Cyrillic)5419541n5148905f1n0941f5809mn-Cyrl
+Mongolian (Traditional) // ᠮᠣᠩᠭᠣᠯ ᠬᠡᠯᠡ5419541n5148905f1n0941f5809mn-Mong
+Myanmar (Burmese) // မြန်မာ5419541n5148905f1n0941f5809my
+Nepali // नेपाली5419541n5148905f1n0941f5809ne
+Norwegian // Norsk Bokmål5419541n5148905f1n0941f5809nb
+Odia // ଓଡ଼ିଆ5419541n5148905f1n0941f5809or
+Pashto // پښتو5419541n5148905f1n0941f5809ps
+Persian // فارسی5419541n5148905f1n0941f5809fa
+Polish // Polski5419541n5148905f1n0941f5809pl
+Portuguese (Brazil) // Português (Brasil)5419541n5148905f1n0941f5809pt
+Portuguese (Portugal) // Português (Portugal)5419541n5148905f1n0941f5809pt-PT
+Punjabi // ਪੰਜਾਬੀ5419541n5148905f1n0941f5809pa
+Querétaro Otomi // Hñähñu5419541n5148905f1n0941f5809otq
+Romanian // Română5419541n5148905f1n0941f5809ro
+Russian // Русский5419541n5148905f1n0941f5809ru
+Samoan // Gagana Sāmoa5419541n5148905f1n0941f5809sm
+Serbian (Cyrillic) // Српски (ћирилица)5419541n5148905f1n0941f5809sr-Cyrl
+Serbian (Latin) // Srpski (latinica)5419541n5148905f1n0941f5809sr-Latn
+Slovak // Slovenčina5419541n5148905f1n0941f5809sk
+Slovenian // Slovenščina5419541n5148905f1n0941f5809sl
+Somali // Soomaali5419541n5148905f1n0941f5809so
+Spanish // Español5419541n5148905f1n0941f5809es
+Swahili // Kiswahili5419541n5148905f1n0941f5809sw
+Swedish // Svenska5419541n5148905f1n0941f5809sv
+Tahitian // Reo Tahiti5419541n5148905f1n0941f5809ty
+Tamil // தமிழ்5419541n5148905f1n0941f5809ta
+Tatar // Татар5419541n5148905f1n0941f5809tt
+Telugu // తెలుగు5419541n5148905f1n0941f5809te
+Thai // ไทย5419541n5148905f1n0941f5809th
+Tibetan // བོད་སྐད་5419541n5148905f1n0941f5809bo
+Tigrinya // ትግር5419541n5148905f1n0941f5809ti
+Tongan // Lea Fakatonga5419541n5148905f1n0941f5809to
+Turkish // Türkçe5419541n5148905f1n0941f5809tr
+Turkmen // Türkmen Dili5419541n5148905f1n0941f5809tk
+Ukrainian // Українська5419541n5148905f1n0941f5809uk
+Upper Sorbian // Hornjoserbšćina5419541n5148905f1n0941f5809hsb
+Urdu // اردو5419541n5148905f1n0941f5809ur
+Uyghur // ئۇيغۇرچە5419541n5148905f1n0941f5809ug
+Uzbek (Latin) // Uzbek (Latin)5419541n5148905f1n0941f5809uz
+Vietnamese // Tiếng Việt5419541n5148905f1n0941f5809vi
+Welsh // Cymraeg5419541n5148905f1n0941f5809cy
+Yucatec Maya // Yucatec Maya5419541n5148905f1n0941f5809yua
+Zulu // Isi-Zulu5419541n5148905f1n0941f5809zu
+]]></Manual_Values>
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (51)</Description>
+              <Name>Macro Output (51)</Name>
+              <ToolId value="51" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImage>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</MacroImage>
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="51" Selected="True" />
+        <Tool ToolId="65" Selected="False" />
+        <Tool ToolId="1" Selected="True" />
+        <Tool ToolId="32" Selected="False" />
+        <Tool ToolId="59" Selected="False" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
